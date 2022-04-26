@@ -1,16 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <WatchControl></WatchControl>
+    <TimeCounter></TimeCounter>
+    <CycleDisplay></CycleDisplay>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import WatchControl from './components/WatchControl.vue'
+import TimeCounter from './components/TimeCounter.vue'
+import CycleDisplay from './components/CycleDisplay.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    WatchControl,
+    TimeCounter,
+    CycleDisplay
+  },
 }
 </script>
 
